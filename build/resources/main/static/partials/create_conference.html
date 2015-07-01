@@ -1,0 +1,68 @@
+
+<div >
+    <div >
+        <h2>Create a New Conference: </h2>
+        <div class="panel-heading">
+
+        </div>
+        <div ng-show="error" class="alert alert-danger">{{error}}</div>
+        <div ng-show="message" class="alert alert-success">{{message}}</div>
+        <form role="form", ng-submit="createConference()">
+
+
+            <div class="form-group">
+                <label>Name: </label>
+                <input class="form-control", ng-model = "name">
+            </div>
+            <div class="form-group">
+                <label>Description: </label>
+                <input class="form-control", ng-model = "description">
+            </div>
+
+
+            <div class="form-group" style ="max-width: 300px;">
+                <label>Start Time: </label>
+                <input class="form-control", type="date"  ng-model = "startTime" size="20">
+            </div>
+
+
+            <div class="form-group" style ="max-width: 300px;">
+                <label>End Time: </label>
+                <input class="form-control", type="date" ng-model = "endTime">
+            </div>
+
+            <div class="form-group">
+                <div>
+                <label>Venue:</label>
+                </div>
+                <div class="form-group">
+                    <label>Street #: </label>
+                    <input class="form-control", ng-model = "street">
+
+                    <label>City: </label>
+                    <input class="form-control", ng-model = "city">
+
+                    <label>State: </label>
+                    <input class="form-control", ng-model = "state">
+
+                    <label>Zip Code: </label>
+                    <input class="form-control", ng-model = "zip">
+                </div>
+
+            </div>
+
+
+
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Create</button>
+
+        </form>
+
+
+
+    </div>
+
+
+
+</div>
+
+

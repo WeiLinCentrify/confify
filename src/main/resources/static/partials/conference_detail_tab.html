@@ -1,0 +1,19 @@
+<div class="tab-pane fade active in" id="home">
+    <p>{{conference.description}}</p>
+    <div>
+        <div class="container" ng-show="showButton">
+            <input type="text" ng-model="attendeeEmail" />
+            <button ng-click="inviteAttendee(attendeeEmail, conference.id);attendeeEmail=''" class="btn btn-primary">Invite Attendee</button>
+            <div ng-show="message"><strong class="text-success">{{message}}</strong></div>
+            <div ng-show="error"><strong class="text-danger">{{error}}</strong></div>
+        </div>
+        <br>
+        <div class="container" ng-show="showButton">
+            <input type="text" ng-model="speakerEmail" />
+            <button ng-click="inviteSpeaker(speakerEmail, conference.id);speakerEmail=''" class="btn btn-primary">Invite Speaker</button>
+            <div ng-show="message1"><strong class="text-success">{{message1}}</strong></div>
+            <div ng-show="error1"><strong class="text-danger">{{error1}}</strong></div>
+        </div>
+    </div>
+</div>
+
